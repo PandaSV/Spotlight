@@ -323,7 +323,7 @@ public class SpotlightView extends FrameLayout {
     /**
      * Dissmiss view with reverse animation
      */
-    private void dismiss() {
+    public void dismiss() {
         preferencesManager.setDisplayed(usageId);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             if (isRevealAnimationEnabled)
